@@ -12,7 +12,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post('https://blog-fmpk-a-nshul.vercel.app/auth/register', formData);
+      await axios.post('/auth/register', formData);
       setRegistrationStatus('success'); // Set registrationStatus to 'success' upon successful registration
       console.log('Registration successful');
     } catch (error) {
