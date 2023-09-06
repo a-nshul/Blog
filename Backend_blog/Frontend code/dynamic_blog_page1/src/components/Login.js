@@ -12,7 +12,7 @@ const Login = ({ onLogin }) => {
 
 const handleLogin = async () => {
     try {
-      const response = await axios.post('/auth/login', formData); // Update the endpoint to match the backend route
+      const response = await axios.post('https://blog-fmpk-a-nshul.vercel.app/auth/login', formData); // Update the endpoint to match the backend route
       const token = response?.data?.token; // Use optional chaining to access the 'token'
       if (token) {
         localStorage.setItem('token', token);
