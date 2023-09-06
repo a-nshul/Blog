@@ -12,7 +12,7 @@ const BlogForm = () => {
 
   const handleCreateBlog = async () => {
     try {
-      await axios.post('/blogs', formData);
+      await axios.post('https://blog-fmpk-a-nshul.vercel.app/auth/blogs', formData);
       console.log('Blog created successfully');
     } catch (error) {
       console.error('Blog creation failed:', error);
