@@ -7,7 +7,7 @@ const BlogList = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('https://blog-fmpk-a-nshul.vercel.app/auth/blogs');
+        const response = await axios.get('/auth/blogs');
         setBlogs(response.data);
       } catch (error) {
         console.error('Error fetching blogs:', error);
